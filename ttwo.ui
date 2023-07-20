@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1293</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="bgwidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#bgwidget{
+background-color:qconicalgradient(cx:0.943, cy:1, angle:0, stop:0.159091 rgba(216, 31, 32, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+     </property>
+     <widget class="QWidget" name="prediction" native="true">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>60</y>
+        <width>751</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#bgwidget{
+background-color:qconicalgradient(cx:0.943, cy:1, angle:0, stop:0.159091 rgba(216, 31, 32, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+      </property>
+      <widget class="QLabel" name="text1">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>-10</y>
+         <width>411</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 80 20pt &quot;Arial Black&quot;;
+color:rgb(255, 255, 127)</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fire Prediction&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="predict2">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>510</y>
+         <width>141</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 bold 14pt &quot;HoloLens MDL2 Assets&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Predict</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelcrop">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>520</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 127);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>PREDICTION</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Tline1">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>110</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line2RH">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>110</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line3WS">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>190</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line4Rain">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>190</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line7DC">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>360</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line6DMC">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>280</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line5FFMC">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>280</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_2">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>160</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Rain</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_4">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>250</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>DMC</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_5">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>240</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>FFMC</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_6">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>80</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Temperature</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_7">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>160</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>WS</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_8">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>80</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>RH</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_9">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>320</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>ISI</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="back">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>510</y>
+         <width>141</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 bold 14pt &quot;HoloLens MDL2 Assets&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line8ISI">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>360</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line9BUI">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>440</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line10FWI">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>440</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_10">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>320</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>DC</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_11">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>400</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>BUI</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelsoil_12">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>400</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>FWI</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
